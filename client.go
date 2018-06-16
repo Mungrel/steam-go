@@ -1,11 +1,13 @@
 package steam
 
-type SteamClient struct {
+// Client is a basic Steam API client
+type Client struct {
 	apiKey string
 }
 
-func NewSteamClient(apiKey string) *SteamClient {
-	return &SteamClient{
+// NewSteamClient creates a new Client
+func NewSteamClient(apiKey string) *Client {
+	return &Client{
 		apiKey: apiKey,
 	}
 }
