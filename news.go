@@ -28,6 +28,7 @@ type appNews struct {
 	NewsItems []*NewsItem `json:"newsitems"`
 }
 
+// GetNewsForApp gets news items from the Steam API
 func (client *Client) GetNewsForApp(appID string, count, maxLength int64) ([]*NewsItem, error) {
 	parameters := url.Values{}
 	parameters.Add("appid", appID)
