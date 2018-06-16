@@ -2,8 +2,9 @@ language: go
 
 go:
   - "1.10.x"
-  
+
 script:
+ - go build ./...
  - go get -u github.com/alecthomas/gometalinter
  - gometalinter --install
  - gometalinter ./...
