@@ -1,5 +1,6 @@
 package steam
 
+// NewsItem represents a NewsItem from the Steam API
 type NewsItem struct {
 	GID           *string    `json:"gid"`
 	Title         *string    `json:"title"`
