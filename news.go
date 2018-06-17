@@ -16,8 +16,8 @@ type NewsItem struct {
 	FeedLabel     *string    `json:"feedlabel"`
 	Date          *Timestamp `json:"date"`
 	FeedName      *string    `json:"feedname"`
-	FeedType      *string    `json:"feed_type"`
-	AppID         *string    `json:"appid"`
+	FeedType      int64      `json:"feed_type"`
+	AppID         int64      `json:"appid"`
 }
 
 type newsItemResponse struct {
