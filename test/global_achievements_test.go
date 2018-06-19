@@ -14,5 +14,5 @@ func TestGlobalAchievements(t *testing.T) {
 	assert.Nil(err)
 	assert.NotNil(achievements)
 	assert.NotEmpty(achievements)
-	assert.Len(achievements, 1)
+	assert.Len(achievements, 522)
 }
