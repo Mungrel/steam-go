@@ -5,8 +5,9 @@ import (
 )
 
 const (
-	partialPath = "payloads/"
-	news        = "news.json"
+	partialPath        = "payloads/"
+	news               = "news.json"
+	globalAchievements = "global_achievements.json"
 )
 
 func getJSON(fileName string) string {
