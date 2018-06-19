@@ -21,8 +21,12 @@ func newMockClient() *steam.Client {
 func (mc *mockClient) Do(req *http.Request) (*http.Response, error) {
 	url := req.URL.Path
 
-	if strings.Contains(url, "/ISteamNews/") {
+	if strings.Contains(url, "/ISteamNews/GetNewsForApp/v0002/") {
 		return newResponse(http.StatusOK, getJSON(news)), nil
+	}
+
+	if strings.Contains(url, "/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v0002/") {
+		return newResponse(http.StatusOK, getJSON(globalAchievements)), nil
 	}
 
 	return nil, errors.New("Endpoint not mocked")
