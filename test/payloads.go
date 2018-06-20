@@ -10,6 +10,7 @@ const (
 	globalAchievements = "global_achievements.json"
 	globalStats        = "global_stats.json"
 	playerSummaries    = "player_summaries.json"
+	friendsList        = "friends_list.json"
 )
 
 func getJSON(fileName string) string {
