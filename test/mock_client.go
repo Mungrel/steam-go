@@ -37,6 +37,10 @@ func (mc *mockClient) Do(req *http.Request) (*http.Response, error) {
 		return newResponse(http.StatusOK, getJSON(playerSummaries)), nil
 	}
 
+	if strings.Contains(url, "/ISteamUser/GetFriendList/v0001/") {
+		return newResponse(http.StatusOK, getJSON(friendsList)), nil
+	}
+
 	return nil, errors.New("Endpoint not mocked")
 }
 
