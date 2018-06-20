@@ -12,8 +12,13 @@ type globalStatsResponse struct {
 
 // GlobalStats represents the stats from the Steam API
 type GlobalStats struct {
-	Stats  map[string]string `json:"globalstats"`
-	Result int64             `json:"result"`
+	Stats  map[string]*Stat `json:"globalstats"`
+	Result int64            `json:"result"`
+}
+
+// Stat encompasses the fields of a stat
+type Stat struct {
+	Total string `json:"total"`
 }
 
 // GetGlobalStatsForGame gets global stats for an app given the names of the stats, from the Steam API
