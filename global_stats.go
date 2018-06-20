@@ -16,6 +16,7 @@ type GlobalStats struct {
 	Result int64             `json:"result"`
 }
 
+// GetGlobalStatsForGame gets global stats for an app given the names of the stats, from the Steam API
 func (client *Client) GetGlobalStatsForGame(appID string, names []string) (*GlobalStats, error) {
 	parameters := url.Values{}
 	parameters.Add("appid", appID)
