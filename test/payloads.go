@@ -9,6 +9,7 @@ const (
 	news               = "news.json"
 	globalAchievements = "global_achievements.json"
 	globalStats        = "global_stats.json"
+	playerSummaries    = "player_summaries.json"
 )
 
 func getJSON(fileName string) string {
