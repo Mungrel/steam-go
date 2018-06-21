@@ -3,7 +3,7 @@ package test
 import (
 	"testing"
 
-	steam "github.com/Mungrel/steam-go"
+	. "github.com/Mungrel/steam-go"
 	"github.com/Mungrel/testify/assert"
 )
 
@@ -20,10 +20,10 @@ func TestGlobalStats(t *testing.T) {
 	assert.Equal(stats.Result, int64(1))
 	assert.Len(stats.Stats, 1)
 
-	expectedStat := &steam.Stat{
+	expectedStat := &Stat{
 		Total: "28871095469",
 	}
-	expectedStats := map[string]*steam.Stat{
+	expectedStats := map[string]*Stat{
 		"global.map.emp_isle": expectedStat,
 	}
 	assert.Equal(expectedStats, stats.Stats)
