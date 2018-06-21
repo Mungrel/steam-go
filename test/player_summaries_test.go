@@ -2,7 +2,6 @@ package test
 
 import (
 	"testing"
-	"time"
 
 	. "github.com/Mungrel/steam-go"
 
@@ -19,16 +18,13 @@ func TestPlayerSummaries(t *testing.T) {
 	assert.NotEmpty(players)
 	assert.Len(players, 1)
 
-	expectedLastLogOff := Timestamp(time.Unix(1529473982, 0))
-	expectedTimeCreated := Timestamp(time.Unix(1063407589, 0))
-
 	expected := []*PlayerSummary{
 		{
 			SteamID:                  "76561197960435530",
 			CommunityVisibilityState: 3,
 			ProfileState:             1,
 			PersonaName:              "Robin",
-			LastLogOff:               &expectedLastLogOff,
+			LastLogOff:               NewTimestamp(1529473982),
 			ProfileURL:               "https://steamcommunity.com/id/robinwalker/",
 			Avatar:                   "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/f1/f1dd60a188883caf82d0cbfccfe6aba0af1732d4.jpg",
 			AvatarMedium:             "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/f1/f1dd60a188883caf82d0cbfccfe6aba0af1732d4_medium.jpg",
@@ -36,7 +32,7 @@ func TestPlayerSummaries(t *testing.T) {
 			PersonaState:             0,
 			RealName:                 "Robin Walker",
 			PrimaryClanID:            "103582791429521412",
-			TimeCreated:              &expectedTimeCreated,
+			TimeCreated:              NewTimestamp(1063407589),
 			PersonaStateFlags:        0,
 			CountryCode:              "US",
 			StateCode:                "WA",
