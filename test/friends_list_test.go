@@ -2,7 +2,9 @@ package test
 
 import (
 	"testing"
+	"time"
 
+	. "github.com/Mungrel/steam-go"
 	"github.com/Mungrel/testify/assert"
 )
 
@@ -17,10 +19,21 @@ func TestFriendsList(t *testing.T) {
 	assert.Nil(err)
 	assert.NotNil(friends)
 	assert.NotEmpty(friends)
-	assert.Len(friends, 9)
+	assert.Len(friends, 2)
 
-	for _, friend := range friends {
-		assert.NotEmpty(friend.SteamID)
-		assert.NotEmpty(friend.Relationship)
+	expectedFriendSince := Timestamp(time.Unix(0, 0))
+	expected := []*Friend{
+		&Friend{
+			SteamID:      "76561197960265731",
+			Relationship: "friend",
+			FriendSince:  &expectedFriendSince,
+		},
+		&Friend{
+			SteamID:      "76561197960265738",
+			Relationship: "friend",
+			FriendSince:  &expectedFriendSince,
+		},
 	}
+
+	assert.Equal(expected, friends)
 }

@@ -27,19 +27,6 @@
                 "feedname": "tf2_blog",
                 "feed_type": 0,
                 "appid": 440
-            },
-            {
-                "gid": "2431262152935880468",
-                "title": "Team Fortress 2 Update Released",
-                "url": "https://store.steampowered.com/news/40961/",
-                "is_external_url": false,
-                "author": "Valve",
-                "contents": "An update to Team Fortress 2 has been released. The update will be applied automatically when you restart Team Fortress 2. The major changes include: * Several fixes to address exploits and stability issues; * Fixed server crash related to the CTriggerAddTFPlayerCondition map entity; * Fixed client ...",
-                "feedlabel": "Product Update",
-                "date": 1528402980,
-                "feedname": "steam_updates",
-                "feed_type": 0,
-                "appid": 440
             }
         ],
         "count": 2546
