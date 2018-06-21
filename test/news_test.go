@@ -29,7 +29,7 @@ func TestNews(t *testing.T) {
 	expectedDate1 := Timestamp(time.Unix(1528907340, 0))
 	expectedDate2 := Timestamp(time.Unix(1528402980, 0))
 	expected := []*NewsItem{
-		&NewsItem{
+		{
 			GID:           "2431262783620979755",
 			Title:         "Top Ten Plays from the Copenhagen LAN 2018",
 			URL:           "https://steamstore-a.akamaihd.net/news/externalpost/tf2_blog/2431262783620979755",
@@ -42,7 +42,7 @@ func TestNews(t *testing.T) {
 			FeedType:      0,
 			AppID:         440,
 		},
-		&NewsItem{
+		{
 			GID:           "2431262152935892422",
 			Title:         "Team Fortress 2 Update Released",
 			URL:           "https://steamstore-a.akamaihd.net/news/externalpost/tf2_blog/2431262152935892422",

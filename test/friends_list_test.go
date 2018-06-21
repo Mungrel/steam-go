@@ -23,12 +23,12 @@ func TestFriendsList(t *testing.T) {
 
 	expectedFriendSince := Timestamp(time.Unix(0, 0))
 	expected := []*Friend{
-		&Friend{
+		{
 			SteamID:      "76561197960265731",
 			Relationship: "friend",
 			FriendSince:  &expectedFriendSince,
 		},
-		&Friend{
+		{
 			SteamID:      "76561197960265738",
 			Relationship: "friend",
 			FriendSince:  &expectedFriendSince,

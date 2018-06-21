@@ -23,7 +23,7 @@ func TestPlayerSummaries(t *testing.T) {
 	expectedTimeCreated := Timestamp(time.Unix(1063407589, 0))
 
 	expected := []*PlayerSummary{
-		&PlayerSummary{
+		{
 			SteamID:                  "76561197960435530",
 			CommunityVisibilityState: 3,
 			ProfileState:             1,

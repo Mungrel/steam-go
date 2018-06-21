@@ -18,11 +18,11 @@ func TestGlobalAchievements(t *testing.T) {
 	assert.Len(achievements, 2)
 
 	expected := []*AchievementPercentage{
-		&AchievementPercentage{
+		{
 			Name:       "TF_SCOUT_LONG_DISTANCE_RUNNER",
 			Percentage: 53.20844650268555,
 		},
-		&AchievementPercentage{
+		{
 			Name:       "TF_HEAVY_DAMAGE_TAKEN",
 			Percentage: 44.763389587402344,
 		},
