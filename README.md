@@ -7,7 +7,7 @@ A Go Steam Web-API Wrapper
 - [x] `http://api.steampowered.com/ISteamUserStats/GetGlobalStatsForGame/v0001/`
 - [ ] `http://api.steampowered.com/ISteamUserStats/GetPlayerAchievements/v0001/`
 - [ ] `http://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v0002/`
-- [ ] `http://api.steampowered.com/ISteamUserStats/GetSchemaForGame/v2/`
+- [x] `http://api.steampowered.com/ISteamUserStats/GetSchemaForGame/v2/`
 - [ ] `http://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/`
 - [x] `http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/`
 - [x] `http://api.steampowered.com/ISteamUser/GetFriendList/v0001/`
