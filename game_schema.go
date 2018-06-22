@@ -35,7 +35,7 @@ type Achievement struct {
 // Stat represents a stat in the Steam API game schema
 type Stat struct {
 	Name         string `json:"name"`
-	DefaultValue string `json:"defaultvalue"`
+	DefaultValue int64  `json:"defaultvalue"`
 	DisplayName  string `json:"displayName"`
 }
 
