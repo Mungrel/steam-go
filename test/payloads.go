@@ -11,6 +11,7 @@ const (
 	globalStats        = "global_stats.json"
 	playerSummaries    = "player_summaries.json"
 	friendsList        = "friends_list.json"
+	gameSchema         = "game_schema.json"
 )
 
 func getJSON(fileName string) string {
