@@ -20,10 +20,10 @@ func TestGlobalStats(t *testing.T) {
 	assert.Equal(stats.Result, int64(1))
 	assert.Len(stats.Stats, 1)
 
-	expectedStat := &Stat{
+	expectedStat := &GlobalStat{
 		Total: "28871095469",
 	}
-	expectedStats := map[string]*Stat{
+	expectedStats := map[string]*GlobalStat{
 		"global.map.emp_isle": expectedStat,
 	}
 	assert.Equal(expectedStats, stats.Stats)

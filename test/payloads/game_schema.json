@@ -1,0 +1,40 @@
+{
+    "game": {
+        "gameName": "PAYDAY 2",
+        "gameVersion": "538",
+        "availableGameStats": {
+            "achievements": [
+                {
+                    "name": "hot_wheels",
+                    "defaultvalue": 0,
+                    "displayName": "Coming in Hot",
+                    "hidden": 0,
+                    "description": "On day 1 of the Watchdogs job, don't let the cops shoot and destroy the escape vehicle.",
+                    "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/218620/f6ed9cd6ec9750bcd36193c74e6f16104f6c1267.jpg",
+                    "icongray": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/218620/c336adacd88a21a6010c9b5596192322aecaf265.jpg"
+                },
+                {
+                    "name": "fish_ai",
+                    "defaultvalue": 0,
+                    "displayName": "Fish A.I.",
+                    "hidden": 0,
+                    "description": "On day 2 of the Watchdogs job, throw a loot bag into the sea, hoping fish move away as it gets near.",
+                    "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/218620/19fd9f952f27bad6bc909721a69c6374cfa5e31b.jpg",
+                    "icongray": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/218620/6f6357e4e4106e7b120c2ef6814061e1c6e989ec.jpg"
+                }
+            ],
+            "stats": [
+                {
+                    "name": "player_time",
+                    "defaultvalue": 0,
+                    "displayName": ""
+                },
+                {
+                    "name": "player_time_0h",
+                    "defaultvalue": 0,
+                    "displayName": ""
+                }
+            ]
+        }
+    }
+}

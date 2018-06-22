@@ -12,12 +12,12 @@ type globalStatsResponse struct {
 
 // GlobalStats represents the stats from the Steam API
 type GlobalStats struct {
-	Stats  map[string]*Stat `json:"globalstats"`
-	Result int64            `json:"result"`
+	Stats  map[string]*GlobalStat `json:"globalstats"`
+	Result int64                  `json:"result"`
 }
 
-// Stat encompasses the fields of a stat
-type Stat struct {
+// GlobalStat encompasses the fields of a stat
+type GlobalStat struct {
 	Total string `json:"total"`
 }
 
